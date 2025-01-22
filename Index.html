@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотокаталог</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .photo-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        .photo-info {
+            margin-top: 10px;
+        }
+        .photo-title {
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+        .photo-price {
+            color: #2ecc71;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .photo-description {
+            color: #666;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Мой фотокаталог</h1>
+        <p>Коллекция профессиональных фотографий</p>
+    </div>
+
+    <div class="gallery">
+        <div class="photo-card">
+            <img src="/api/placeholder/400/320" alt="Фотография природы">
+            <div class="photo-info">
+                <div class="photo-title">Летний пейзаж</div>
+                <div class="photo-description">Красивый летний пейзаж на закате</div>
+                <div class="photo-price">2000 ₽</div>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="/api/placeholder/400/320" alt="Портрет">
+            <div class="photo-info">
+                <div class="photo-title">Студийный портрет</div>
+                <div class="photo-description">Профессиональная студийная съёмка</div>
+                <div class="photo-price">3500 ₽</div>
+            </div>
+        </div>
+
+        <div class="photo-card">
+            <img src="/api/placeholder/400/320" alt="Свадебное фото">
+            <div class="photo-info">
+                <div class="photo-title">Свадебная фотосессия</div>
+                <div class="photo-description">Памятные моменты вашего особенного дня</div>
+                <div class="photo-price">5000 ₽</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
