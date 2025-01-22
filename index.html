@@ -47,6 +47,44 @@
             height: auto;
             border-radius: 8px;
         }
+        .section {
+            margin-top: 50px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .whatsapp-button {
+            background-color: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
     </style>
 </head>
 <body>
@@ -61,18 +99,66 @@
         <p>Мы предлагаем широкий ассортимент смесителей для различных сегментов рынка: от бюджетных до премиум-класса. У нас можно найти продукцию, которая отвечает высоким стандартам качества и доступна для разных категорий покупателей.</p>
 
         <div class="button-container">
-            <a href="segment1.html" class="button">
+            <a href="#premium" class="button">
                 <img src="image1.jpg" alt="Дорогие смесители">
                 <p>Дорогие</p>
             </a>
-            <a href="segment2.html" class="button">
+            <a href="#mid-range" class="button">
                 <img src="image2.jpg" alt="Средние смесители">
                 <p>Средние</p>
             </a>
-            <a href="segment3.html" class="button">
+            <a href="#budget" class="button">
                 <img src="image3.jpg" alt="Дешевые смесители">
                 <p>Дешевые</p>
             </a>
+        </div>
+
+        <a href="https://wa.me/87056881032" class="whatsapp-button" target="_blank">Связаться с нами в WhatsApp</a>
+    </div>
+
+    <!-- Секции товаров -->
+    <div id="premium" class="section">
+        <h3 class="product-title">Дорогие смесители</h3>
+        <div class="product-list">
+            <!-- Здесь будут ваши товары -->
+            <div class="product-item">
+                <img src="premium1.jpg" alt="Смеситель 1">
+                <p>Смеситель 1</p>
+            </div>
+            <div class="product-item">
+                <img src="premium2.jpg" alt="Смеситель 2">
+                <p>Смеситель 2</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mid-range" class="section">
+        <h3 class="product-title">Средние смесители</h3>
+        <div class="product-list">
+            <!-- Здесь будут ваши товары -->
+            <div class="product-item">
+                <img src="mid1.jpg" alt="Смеситель 1">
+                <p>Смеситель 1</p>
+            </div>
+            <div class="product-item">
+                <img src="mid2.jpg" alt="Смеситель 2">
+                <p>Смеситель 2</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="budget" class="section">
+        <h3 class="product-title">Дешевые смесители</h3>
+        <div class="product-list">
+            <!-- Здесь будут ваши товары -->
+            <div class="product-item">
+                <img src="budget1.jpg" alt="Смеситель 1">
+                <p>Смеситель 1</p>
+            </div>
+            <div class="product-item">
+                <img src="budget2.jpg" alt="Смеситель 2">
+                <p>Смеситель 2</p>
+            </div>
         </div>
     </div>
 
